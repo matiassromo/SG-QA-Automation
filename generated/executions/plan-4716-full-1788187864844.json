@@ -1,0 +1,424 @@
+{
+  "executedAt": "2026-08-31T14:51:04.844Z",
+  "apply": false,
+  "planId": 4716,
+  "totals": {
+    "points": 47,
+    "executed": 0,
+    "passed": 0,
+    "failed": 0,
+    "blocked": 47
+  },
+  "publications": [
+    {
+      "suiteId": 4718,
+      "configurationName": "Windows 10",
+      "applied": false,
+      "runName": "SG-QA-Automation | 2129 : HU-01 – Acceso al módulo de Perfilamiento Web - Movil | Windows 10",
+      "results": [
+        {
+          "testCaseId": 3808,
+          "testPointId": 7502,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 3810,
+          "testPointId": 7503,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 3811,
+          "testPointId": 7504,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 3950,
+          "testPointId": 7505,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        }
+      ]
+    },
+    {
+      "suiteId": 4718,
+      "configurationName": "Chrome",
+      "applied": false,
+      "runName": "SG-QA-Automation | 2129 : HU-01 – Acceso al módulo de Perfilamiento Web - Movil | Chrome",
+      "results": [
+        {
+          "testCaseId": 4698,
+          "testPointId": 7509,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 4699,
+          "testPointId": 7512,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 4700,
+          "testPointId": 7515,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        }
+      ]
+    },
+    {
+      "suiteId": 4718,
+      "configurationName": "iOS",
+      "applied": false,
+      "runName": "SG-QA-Automation | 2129 : HU-01 – Acceso al módulo de Perfilamiento Web - Movil | iOS",
+      "results": [
+        {
+          "testCaseId": 4698,
+          "testPointId": 7510,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 4699,
+          "testPointId": 7513,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 4700,
+          "testPointId": 7516,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        }
+      ]
+    },
+    {
+      "suiteId": 4718,
+      "configurationName": "Android",
+      "applied": false,
+      "runName": "SG-QA-Automation | 2129 : HU-01 – Acceso al módulo de Perfilamiento Web - Movil | Android",
+      "results": [
+        {
+          "testCaseId": 4698,
+          "testPointId": 7511,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 4699,
+          "testPointId": 7514,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 4700,
+          "testPointId": 7517,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        }
+      ]
+    },
+    {
+      "suiteId": 4719,
+      "configurationName": "Windows 10",
+      "applied": false,
+      "runName": "SG-QA-Automation | 2131 : HU-02 – Cuestionario por categorías | Windows 10",
+      "results": [
+        {
+          "testCaseId": 3810,
+          "testPointId": 7518,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 3811,
+          "testPointId": 7519,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        }
+      ]
+    },
+    {
+      "suiteId": 4719,
+      "configurationName": "Chrome",
+      "applied": false,
+      "runName": "SG-QA-Automation | 2131 : HU-02 – Cuestionario por categorías | Chrome",
+      "results": [
+        {
+          "testCaseId": 4702,
+          "testPointId": 7523,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 4703,
+          "testPointId": 7526,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 4704,
+          "testPointId": 7529,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        }
+      ]
+    },
+    {
+      "suiteId": 4719,
+      "configurationName": "iOS",
+      "applied": false,
+      "runName": "SG-QA-Automation | 2131 : HU-02 – Cuestionario por categorías | iOS",
+      "results": [
+        {
+          "testCaseId": 4702,
+          "testPointId": 7524,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 4703,
+          "testPointId": 7527,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 4704,
+          "testPointId": 7530,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        }
+      ]
+    },
+    {
+      "suiteId": 4719,
+      "configurationName": "Android",
+      "applied": false,
+      "runName": "SG-QA-Automation | 2131 : HU-02 – Cuestionario por categorías | Android",
+      "results": [
+        {
+          "testCaseId": 4702,
+          "testPointId": 7525,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 4703,
+          "testPointId": 7528,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 4704,
+          "testPointId": 7531,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        }
+      ]
+    },
+    {
+      "suiteId": 4720,
+      "configurationName": "Windows 10",
+      "applied": false,
+      "runName": "SG-QA-Automation | 2132 : HU-03 – Navegación secuencial | Windows 10",
+      "results": [
+        {
+          "testCaseId": 3810,
+          "testPointId": 7532,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 3811,
+          "testPointId": 7533,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        }
+      ]
+    },
+    {
+      "suiteId": 4720,
+      "configurationName": "iOS",
+      "applied": false,
+      "runName": "SG-QA-Automation | 2132 : HU-03 – Navegación secuencial | iOS",
+      "results": [
+        {
+          "testCaseId": 4706,
+          "testPointId": 7537,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 4707,
+          "testPointId": 7539,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 4708,
+          "testPointId": 7541,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        }
+      ]
+    },
+    {
+      "suiteId": 4720,
+      "configurationName": "Android",
+      "applied": false,
+      "runName": "SG-QA-Automation | 2132 : HU-03 – Navegación secuencial | Android",
+      "results": [
+        {
+          "testCaseId": 4706,
+          "testPointId": 7538,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 4707,
+          "testPointId": 7540,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 4708,
+          "testPointId": 7542,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        }
+      ]
+    },
+    {
+      "suiteId": 4721,
+      "configurationName": "Windows 10",
+      "applied": false,
+      "runName": "SG-QA-Automation | 2133 : HU-04 – Cálculo del perfil financiero | Windows 10",
+      "results": [
+        {
+          "testCaseId": 3813,
+          "testPointId": 7543,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 3816,
+          "testPointId": 7544,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 3817,
+          "testPointId": 7545,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 3818,
+          "testPointId": 7546,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 4710,
+          "testPointId": 7547,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 4711,
+          "testPointId": 7548,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        }
+      ]
+    },
+    {
+      "suiteId": 4722,
+      "configurationName": "Windows 10",
+      "applied": false,
+      "runName": "SG-QA-Automation | 2134 : HU-05 – Visualización del perfil | Windows 10",
+      "results": [
+        {
+          "testCaseId": 3814,
+          "testPointId": 7549,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 3819,
+          "testPointId": 7550,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 3820,
+          "testPointId": 7551,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        }
+      ]
+    },
+    {
+      "suiteId": 4722,
+      "configurationName": "Chrome",
+      "applied": false,
+      "runName": "SG-QA-Automation | 2134 : HU-05 – Visualización del perfil | Chrome",
+      "results": [
+        {
+          "testCaseId": 4713,
+          "testPointId": 7554,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 4714,
+          "testPointId": 7557,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        }
+      ]
+    },
+    {
+      "suiteId": 4722,
+      "configurationName": "iOS",
+      "applied": false,
+      "runName": "SG-QA-Automation | 2134 : HU-05 – Visualización del perfil | iOS",
+      "results": [
+        {
+          "testCaseId": 4713,
+          "testPointId": 7555,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 4714,
+          "testPointId": 7558,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        }
+      ]
+    },
+    {
+      "suiteId": 4722,
+      "configurationName": "Android",
+      "applied": false,
+      "runName": "SG-QA-Automation | 2134 : HU-05 – Visualización del perfil | Android",
+      "results": [
+        {
+          "testCaseId": 4713,
+          "testPointId": 7556,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 4714,
+          "testPointId": 7559,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        }
+      ]
+    }
+  ]
+}

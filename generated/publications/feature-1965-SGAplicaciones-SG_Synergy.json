@@ -1,0 +1,59 @@
+{
+  "status": "completed",
+  "updatedAt": "2026-08-27T20:30:23.979Z",
+  "organization": "SGAplicaciones",
+  "project": "SG_Synergy",
+  "planId": 4695,
+  "planName": "QA-AUTOMATION-PILOT-1965",
+  "rootSuiteId": 4696,
+  "suites": [
+    {
+      "id": 4697,
+      "name": "2129 : HU-01 – Acceso al módulo de Perfilamiento Web - Movil",
+      "requirementId": 2129,
+      "testCaseIds": [
+        4698,
+        4699,
+        4700
+      ]
+    },
+    {
+      "id": 4701,
+      "name": "2131 : HU-02 – Cuestionario por categorías",
+      "requirementId": 2131,
+      "testCaseIds": [
+        4702,
+        4703,
+        4704
+      ]
+    },
+    {
+      "id": 4705,
+      "name": "2132 : HU-03 – Navegación secuencial",
+      "requirementId": 2132,
+      "testCaseIds": [
+        4706,
+        4707,
+        4708
+      ]
+    },
+    {
+      "id": 4709,
+      "name": "2133 : HU-04 – Cálculo del perfil financiero",
+      "requirementId": 2133,
+      "testCaseIds": [
+        4710,
+        4711
+      ]
+    },
+    {
+      "id": 4712,
+      "name": "2134 : HU-05 – Visualización del perfil",
+      "requirementId": 2134,
+      "testCaseIds": [
+        4713,
+        4714
+      ]
+    }
+  ]
+}

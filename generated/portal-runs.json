@@ -1,0 +1,48 @@
+[
+  {
+    "id": "d750a943-da52-4491-97ec-dbe9bad96032",
+    "pilotId": "synergy-profile-hu-2129",
+    "project": "SG_Synergy",
+    "title": "QA - TC-200 · Acceso al módulo de Perfilamiento",
+    "status": "failed",
+    "startedAt": "2026-08-31T02:52:28.561Z",
+    "output": "Plan: 4716 QA-AUTOMATION-PILOT-1965-REUSE\nSuite: 4718 2129 : HU-01 – Acceso al módulo de Perfilamiento Web - Movil\nConfiguración: Chrome\nElegibles: 2\nImplementados: 1\nPendientes: 1\n  PENDIENTE TC 4700: Verificar que el simulador no se visualiza en la página de inicio después del cambio\nTC 4698 no generó video; no se publicará la suite\n",
+    "completedAt": "2026-08-31T02:53:20.714Z",
+    "video": "C:\\Users\\MatiasRomo\\OneDrive - SYNERGY APEX PARTNERS LLC\\Escritorio\\SG-QA-Automation\\test-results\\auth-synergy.auth.setup.ts-Autenticación-SG-Synergy-synergy-setup\\video.webm"
+  },
+  {
+    "id": "a6926203-d3d2-478d-9f0b-9a28cd145610",
+    "pilotId": "synergy-profile-hu-2129",
+    "project": "SG_Synergy",
+    "title": "QA - TC-200 · Acceso al módulo de Perfilamiento",
+    "status": "passed",
+    "startedAt": "2026-08-31T02:55:28.888Z",
+    "output": "Plan: 4716 QA-AUTOMATION-PILOT-1965-REUSE\nSuite: 4718 2129 : HU-01 – Acceso al módulo de Perfilamiento Web - Movil\nConfiguración: Chrome\nElegibles: 2\nImplementados: 1\nPendientes: 1\n  PENDIENTE TC 4700: Verificar que el simulador no se visualiza en la página de inicio después del cambio\nAzure Test Run: 4300\nResultados publicados: 1\nJournal: C:\\Users\\MatiasRomo\\OneDrive - SYNERGY APEX PARTNERS LLC\\Escritorio\\SG-QA-Automation\\generated\\executions\\plan-4716-suite-4718-run-4300.json\nURL: https://dev.azure.com/SGAplicaciones/SG_Synergy/_TestManagement/Runs?runId=4300&_a=runCharts\n",
+    "completedAt": "2026-08-31T02:55:48.078Z",
+    "azureRunId": 4300,
+    "azureUrl": "https://dev.azure.com/SGAplicaciones/SG_Synergy/_TestManagement/Runs?runId=4300&_a=runCharts",
+    "journal": "C:\\Users\\MatiasRomo\\OneDrive - SYNERGY APEX PARTNERS LLC\\Escritorio\\SG-QA-Automation\\generated\\executions\\plan-4716-suite-4718-run-4300.json",
+    "video": "C:\\Users\\MatiasRomo\\OneDrive - SYNERGY APEX PARTNERS LLC\\Escritorio\\SG-QA-Automation\\test-results\\perfilamiento-qa-tc-200-QA-dabc1--principal-después-de-login-synergy-chrome\\video.webm"
+  },
+  {
+    "id": "d65a3640-0568-44e6-b80b-58db88a68d1c",
+    "pilotId": "SG_Synergy:4716",
+    "project": "SG_Synergy",
+    "title": "QA-AUTOMATION-PILOT-1965-REUSE · Todas las suites",
+    "status": "passed",
+    "startedAt": "2026-08-31T15:40:40.565Z",
+    "output": "Plan completo: 4716 QA-AUTOMATION-PILOT-1965-REUSE\nSuites: 5\nSuite 4718 | Windows 10: 4 casos (4 bloqueados)\nAzure Test Run: 4346\nURL: https://dev.azure.com/SGAplicaciones/SG_Synergy/_TestManagement/Runs?runId=4346&_a=runCharts\nSuite 4718 | Chrome: 3 casos (2 bloqueados)\nAzure Test Run: 4348\nURL: https://dev.azure.com/SGAplicaciones/SG_Synergy/_TestManagement/Runs?runId=4348&_a=runCharts\nSuite 4718 | iOS: 3 casos (3 bloqueados)\nAzure Test Run: 4350\nURL: https://dev.azure.com/SGAplicaciones/SG_Synergy/_TestManagement/Runs?runId=4350&_a=runCharts\nSuite 4718 | Android: 3 casos (3 bloqueados)\nAzure Test Run: 4352\nURL: https://dev.azure.com/SGAplicaciones/SG_Synergy/_TestManagement/Runs?runId=4352&_a=runCharts\nSuite 4719 | Windows 10: 2 casos (2 bloqueados)\nAzure Test Run: 4354\nURL: https://dev.azure.com/SGAplicaciones/SG_Synergy/_TestManagement/Runs?runId=4354&_a=runCharts\nSuite 4719 | Chrome: 3 casos (3 bloqueados)\nAzure Test Run: 4356\nURL: https://dev.azure.com/SGAplicaciones/SG_Synergy/_TestManagement/Runs?runId=4356&_a=runCharts\nSuite 4719 | iOS: 3 casos (3 bloqueados)\nAzure Test Run: 4358\nURL: https://dev.azure.com/SGAplicaciones/SG_Synergy/_TestManagement/Runs?runId=4358&_a=runCharts\nSuite 4719 | Android: 3 casos (3 bloqueados)\nAzure Test Run: 4360\nURL: https://dev.azure.com/SGAplicaciones/SG_Synergy/_TestManagement/Runs?runId=4360&_a=runCharts\nSuite 4720 | Windows 10: 2 casos (2 bloqueados)\nAzure Test Run: 4362\nURL: https://dev.azure.com/SGAplicaciones/SG_Synergy/_TestManagement/Runs?runId=4362&_a=runCharts\nSuite 4720 | iOS: 3 casos (3 bloqueados)\nAzure Test Run: 4364\nURL: https://dev.azure.com/SGAplicaciones/SG_Synergy/_TestManagement/Runs?runId=4364&_a=runCharts\nSuite 4720 | Android: 3 casos (3 bloqueados)\nAzure Test Run: 4366\nURL: https://dev.azure.com/SGAplicaciones/SG_Synergy/_TestManagement/Runs?runId=4366&_a=runCharts\nSuite 4721 | Windows 10: 6 casos (6 bloqueados)\nAzure Test Run: 4368\nURL: https://dev.azure.com/SGAplicaciones/SG_Synergy/_TestManagement/Runs?runId=4368&_a=runCharts\nSuite 4722 | Windows 10: 3 casos (3 bloqueados)\nAzure Test Run: 4370\nURL: https://dev.azure.com/SGAplicaciones/SG_Synergy/_TestManagement/Runs?runId=4370&_a=runCharts\nSuite 4722 | Chrome: 2 casos (2 bloqueados)\nAzure Test Run: 4372\nURL: https://dev.azure.com/SGAplicaciones/SG_Synergy/_TestManagement/Runs?runId=4372&_a=runCharts\nSuite 4722 | iOS: 2 casos (2 bloqueados)\nAzure Test Run: 4374\nURL: https://dev.azure.com/SGAplicaciones/SG_Synergy/_TestManagement/Runs?runId=4374&_a=runCharts\nSuite 4722 | Android: 2 casos (2 bloqueados)\nAzure Test Run: 4376\nURL: https://dev.azure.com/SGAplicaciones/SG_Synergy/_TestManagement/Runs?runId=4376&_a=runCharts\nTotal Test Points: 47\nEjecutados: 1 | Passed: 1 | Failed: 0 | Blocked: 46\nJournal: C:\\Users\\MatiasRomo\\OneDrive - SYNERGY APEX PARTNERS LLC\\Escritorio\\SG-QA-Automation\\generated\\executions\\plan-4716-full-1788190882392.json\n",
+    "completedAt": "2026-08-31T15:41:22.423Z",
+    "azureRunId": 4346,
+    "azureUrl": "https://dev.azure.com/SGAplicaciones/SG_Synergy/_TestManagement/Runs?runId=4346&_a=runCharts",
+    "journal": "C:\\Users\\MatiasRomo\\OneDrive - SYNERGY APEX PARTNERS LLC\\Escritorio\\SG-QA-Automation\\generated\\executions\\plan-4716-full-1788190882392.json",
+    "totals": {
+      "points": 47,
+      "executed": 1,
+      "passed": 1,
+      "failed": 0,
+      "blocked": 46
+    },
+    "video": "C:\\Users\\MatiasRomo\\OneDrive - SYNERGY APEX PARTNERS LLC\\Escritorio\\SG-QA-Automation\\test-results\\perfilamiento-qa-tc-200-QA-dabc1--principal-después-de-login-synergy-chrome\\video.webm"
+  }
+]

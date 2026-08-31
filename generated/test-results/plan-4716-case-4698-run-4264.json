@@ -1,0 +1,20 @@
+{
+  "publishedAt": "2026-08-28T16:23:41.710Z",
+  "organization": "SGAplicaciones",
+  "project": "SG_Synergy",
+  "planId": 4716,
+  "suiteId": 4718,
+  "testCaseId": 4698,
+  "configurationName": "Chrome",
+  "applied": true,
+  "testPointId": 7509,
+  "configurationId": 69,
+  "runId": 4264,
+  "testResultId": 100000,
+  "attachmentIds": [
+    2
+  ],
+  "runName": "SG-QA-Automation | TC 4698 | Chrome",
+  "outcome": "Passed",
+  "webAccessUrl": "https://dev.azure.com/SGAplicaciones/SG_Synergy/_TestManagement/Runs?runId=4264&_a=runCharts"
+}

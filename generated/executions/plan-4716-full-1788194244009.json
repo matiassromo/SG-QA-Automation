@@ -1,0 +1,99 @@
+{
+  "executedAt": "2026-08-31T16:37:24.009Z",
+  "apply": false,
+  "planId": 4716,
+  "totals": {
+    "points": 13,
+    "executed": 0,
+    "passed": 0,
+    "failed": 0,
+    "blocked": 13
+  },
+  "publications": [
+    {
+      "suiteId": 4718,
+      "applied": false,
+      "runName": "SG-QA-Automation | 2129 : HU-01 – Acceso al módulo de Perfilamiento Web - Movil | Todas las configuraciones",
+      "results": [
+        {
+          "testCaseId": 3808,
+          "testPointId": 7502,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 3810,
+          "testPointId": 7503,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 3811,
+          "testPointId": 7504,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 3950,
+          "testPointId": 7505,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 4698,
+          "testPointId": 7509,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 4699,
+          "testPointId": 7512,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 4700,
+          "testPointId": 7515,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 4698,
+          "testPointId": 7510,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 4699,
+          "testPointId": 7513,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 4700,
+          "testPointId": 7516,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 4698,
+          "testPointId": 7511,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 4699,
+          "testPointId": 7514,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 4700,
+          "testPointId": 7517,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        }
+      ]
+    }
+  ]
+}

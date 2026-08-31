@@ -1,0 +1,38 @@
+{
+  "name": "sg-qa-automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "qa:generate": "tsx src/cli/generate-test-plan.ts",
+    "generate:testplan": "tsx src/cli/generate-test-plan.ts",
+    "qa:publish": "tsx src/cli/publish-test-plan.ts",
+    "qa:publish:apply": "tsx src/cli/publish-test-plan.ts --apply-mode",
+    "qa:rename-published": "tsx src/cli/rename-published-test-cases.ts",
+    "qa:automation:plan": "tsx src/cli/generate-automation-manifest.ts",
+    "qa:automation:scaffold": "tsx src/cli/generate-playwright-scaffolds.ts",
+    "qa:result:publish": "tsx src/cli/publish-test-result.ts",
+    "qa:run:suite": "tsx src/cli/run-test-suite.ts",
+    "qa:run:plan": "tsx src/cli/run-test-plan.ts",
+    "qa:runs:delete": "tsx src/cli/delete-test-runs.ts",
+    "qa:portal:runner": "tsx src/runner/portal-runner.ts",
+    "qa:profile:check": "tsx src/cli/check-project-profile.ts"
+    ,"test": "node --test portal/lib/*.test.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^26.1.2",
+    "tsx": "^4.23.12"
+  },
+  "dependencies": {
+    "azure-devops-node-api": "^17.0.0",
+    "dotenv": "^17.4.2",
+    "mammoth": "^1.12.1",
+    "openai": "^7.5.0",
+    "zod": "^4.4.3"
+  }
+}

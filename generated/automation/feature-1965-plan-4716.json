@@ -1,0 +1,422 @@
+{
+  "generatedAt": "2026-08-28T14:47:19.586Z",
+  "featureId": 1965,
+  "planId": 4716,
+  "planName": "QA-AUTOMATION-PILOT-1965-REUSE",
+  "organization": "SGAplicaciones",
+  "project": "SG_Synergy",
+  "sourcePreview": "C:\\Users\\MatiasRomo\\OneDrive - SYNERGY APEX PARTNERS LLC\\Escritorio\\SG-QA-Automation\\generated\\test-plans\\feature-1965.json",
+  "sourceJournal": "C:\\Users\\MatiasRomo\\OneDrive - SYNERGY APEX PARTNERS LLC\\Escritorio\\SG-QA-Automation\\generated\\publications\\feature-1965-plan-4716-SGAplicaciones-SG_Synergy.json",
+  "summary": {
+    "totalTestCases": 13,
+    "automationCandidates": 11,
+    "playwrightEligible": 6,
+    "runnerDefinitionRequired": 5
+  },
+  "cases": [
+    {
+      "azureTestCaseId": 4698,
+      "requirementId": 2129,
+      "suiteName": "HU-01 – Acceso al módulo de Perfilamiento Web - Móvil",
+      "title": "Acceso al módulo de Perfilamiento desde pantalla principal después de login (positiva)",
+      "priority": 1,
+      "type": "functional",
+      "preconditions": [
+        "Usuario registrado en SG con sesión válida",
+        "Usuario en pantalla principal (Dashboard) de la App o Portal Web"
+      ],
+      "steps": [
+        {
+          "action": "En la App (Android/iOS) o Portal Web (Chrome) iniciar sesión con credenciales válidas y navegar al menú o pestaña donde se listan las opciones del usuario",
+          "expected": "Se visualiza la opción 'Perfilamiento' y al seleccionarla se ingresa al módulo de Perfilamiento sin errores."
+        }
+      ],
+      "executionTargets": [
+        {
+          "configurationName": "Android",
+          "runner": "mobile-runner-required",
+          "supportedNow": false,
+          "note": "Definir si es mobile web o aplicación nativa; una app nativa requiere Appium u otro runner móvil."
+        },
+        {
+          "configurationName": "iOS",
+          "runner": "mobile-runner-required",
+          "supportedNow": false,
+          "note": "Definir si es mobile web o aplicación nativa; una app nativa requiere Appium u otro runner móvil."
+        },
+        {
+          "configurationName": "Chrome",
+          "runner": "playwright-web",
+          "supportedNow": true,
+          "note": "Automatizable como navegador web con Playwright."
+        }
+      ],
+      "playwrightEligible": true,
+      "selectorDiscoveryRequired": true,
+      "status": "ready-for-scaffold"
+    },
+    {
+      "azureTestCaseId": 4700,
+      "requirementId": 2129,
+      "suiteName": "HU-01 – Acceso al módulo de Perfilamiento Web - Móvil",
+      "title": "Verificar que el simulador no se visualiza en la página de inicio después del cambio",
+      "priority": 2,
+      "type": "validation",
+      "preconditions": [
+        "Usuario con sesión iniciada en App o Portal Web",
+        "Pantalla de inicio cargada"
+      ],
+      "steps": [
+        {
+          "action": "Revisar la pantalla de inicio en App (Android/iOS) y Portal Web (Chrome) buscando la opción o acceso directo al 'Simulador'",
+          "expected": "No debe mostrarse la opción del Simulador en la pantalla de inicio según criterio de aceptación."
+        }
+      ],
+      "executionTargets": [
+        {
+          "configurationName": "Android",
+          "runner": "mobile-runner-required",
+          "supportedNow": false,
+          "note": "Definir si es mobile web o aplicación nativa; una app nativa requiere Appium u otro runner móvil."
+        },
+        {
+          "configurationName": "iOS",
+          "runner": "mobile-runner-required",
+          "supportedNow": false,
+          "note": "Definir si es mobile web o aplicación nativa; una app nativa requiere Appium u otro runner móvil."
+        },
+        {
+          "configurationName": "Chrome",
+          "runner": "playwright-web",
+          "supportedNow": true,
+          "note": "Automatizable como navegador web con Playwright."
+        }
+      ],
+      "playwrightEligible": true,
+      "selectorDiscoveryRequired": true,
+      "status": "ready-for-scaffold"
+    },
+    {
+      "azureTestCaseId": 4702,
+      "requirementId": 2131,
+      "suiteName": "HU-02 – Cuestionario por categorías",
+      "title": "Mostrar pop-up de consentimiento informado antes de iniciar cuestionario",
+      "priority": 1,
+      "type": "functional",
+      "preconditions": [
+        "Usuario autenticado y en módulo de Perfilamiento"
+      ],
+      "steps": [
+        {
+          "action": "Ingresar al módulo de Perfilamiento y observar el flujo inicial",
+          "expected": "Se despliega un pop-up de consentimiento informado que requiere aceptación explícita antes de mostrar el cuestionario (no avanzar si no se acepta)."
+        }
+      ],
+      "executionTargets": [
+        {
+          "configurationName": "Android",
+          "runner": "mobile-runner-required",
+          "supportedNow": false,
+          "note": "Definir si es mobile web o aplicación nativa; una app nativa requiere Appium u otro runner móvil."
+        },
+        {
+          "configurationName": "iOS",
+          "runner": "mobile-runner-required",
+          "supportedNow": false,
+          "note": "Definir si es mobile web o aplicación nativa; una app nativa requiere Appium u otro runner móvil."
+        },
+        {
+          "configurationName": "Chrome",
+          "runner": "playwright-web",
+          "supportedNow": true,
+          "note": "Automatizable como navegador web con Playwright."
+        }
+      ],
+      "playwrightEligible": true,
+      "selectorDiscoveryRequired": true,
+      "status": "ready-for-scaffold"
+    },
+    {
+      "azureTestCaseId": 4703,
+      "requirementId": 2131,
+      "suiteName": "HU-02 – Cuestionario por categorías",
+      "title": "Cada pregunta presenta respuestas predefinidas y una sola selección válida",
+      "priority": 2,
+      "type": "validation",
+      "preconditions": [
+        "Consentimiento aceptado",
+        "Cuestionario cargado"
+      ],
+      "steps": [
+        {
+          "action": "Navegar a una categoría y revisar una pregunta cualquiera",
+          "expected": "La pregunta muestra opciones predefinidas; el usuario puede seleccionar solo las opciones permitidas y no se aceptan entradas libres."
+        }
+      ],
+      "executionTargets": [
+        {
+          "configurationName": "Android",
+          "runner": "mobile-runner-required",
+          "supportedNow": false,
+          "note": "Definir si es mobile web o aplicación nativa; una app nativa requiere Appium u otro runner móvil."
+        },
+        {
+          "configurationName": "iOS",
+          "runner": "mobile-runner-required",
+          "supportedNow": false,
+          "note": "Definir si es mobile web o aplicación nativa; una app nativa requiere Appium u otro runner móvil."
+        },
+        {
+          "configurationName": "Chrome",
+          "runner": "playwright-web",
+          "supportedNow": true,
+          "note": "Automatizable como navegador web con Playwright."
+        }
+      ],
+      "playwrightEligible": true,
+      "selectorDiscoveryRequired": true,
+      "status": "ready-for-scaffold"
+    },
+    {
+      "azureTestCaseId": 4704,
+      "requirementId": 2131,
+      "suiteName": "HU-02 – Cuestionario por categorías",
+      "title": "Bloqueo de avance si pregunta obligatoria no respondida (negativa)",
+      "priority": 1,
+      "type": "negative",
+      "preconditions": [
+        "Cuestionario iniciado y en una categoría con preguntas obligatorias"
+      ],
+      "steps": [
+        {
+          "action": "Intentar pulsar 'Siguiente' en una categoría sin responder una pregunta marcada como obligatoria",
+          "expected": "La acción está bloqueada y se muestra feedback indicando que la pregunta es obligatoria; no se avanza hasta responder."
+        }
+      ],
+      "executionTargets": [
+        {
+          "configurationName": "Android",
+          "runner": "mobile-runner-required",
+          "supportedNow": false,
+          "note": "Definir si es mobile web o aplicación nativa; una app nativa requiere Appium u otro runner móvil."
+        },
+        {
+          "configurationName": "iOS",
+          "runner": "mobile-runner-required",
+          "supportedNow": false,
+          "note": "Definir si es mobile web o aplicación nativa; una app nativa requiere Appium u otro runner móvil."
+        },
+        {
+          "configurationName": "Chrome",
+          "runner": "playwright-web",
+          "supportedNow": true,
+          "note": "Automatizable como navegador web con Playwright."
+        }
+      ],
+      "playwrightEligible": true,
+      "selectorDiscoveryRequired": true,
+      "status": "ready-for-scaffold"
+    },
+    {
+      "azureTestCaseId": 4706,
+      "requirementId": 2132,
+      "suiteName": "HU-03 – Navegación secuencial",
+      "title": "Botones 'Siguiente' y 'Anterior' disponibles y navegación entre preguntas",
+      "priority": 1,
+      "type": "functional",
+      "preconditions": [
+        "Cuestionario iniciado en App móvil (Android/iOS)"
+      ],
+      "steps": [
+        {
+          "action": "En una categoría con varias preguntas, utilizar 'Siguiente' para avanzar y 'Anterior' para retroceder entre preguntas",
+          "expected": "Los botones están disponibles; la navegación ocurre con animación y sin pérdida de contexto."
+        }
+      ],
+      "executionTargets": [
+        {
+          "configurationName": "Android",
+          "runner": "mobile-runner-required",
+          "supportedNow": false,
+          "note": "Definir si es mobile web o aplicación nativa; una app nativa requiere Appium u otro runner móvil."
+        },
+        {
+          "configurationName": "iOS",
+          "runner": "mobile-runner-required",
+          "supportedNow": false,
+          "note": "Definir si es mobile web o aplicación nativa; una app nativa requiere Appium u otro runner móvil."
+        }
+      ],
+      "playwrightEligible": false,
+      "selectorDiscoveryRequired": true,
+      "status": "runner-definition-required"
+    },
+    {
+      "azureTestCaseId": 4707,
+      "requirementId": 2132,
+      "suiteName": "HU-03 – Navegación secuencial",
+      "title": "Conservación y modificación de respuestas previas (integración con persistencia)",
+      "priority": 1,
+      "type": "integration",
+      "preconditions": [
+        "Usuario inicia cuestionario, responde al menos 3 preguntas y avanza",
+        "Sesión de cuestionario con persistencia disponible (API /sesion)"
+      ],
+      "steps": [
+        {
+          "action": "Retroceder a una pregunta ya respondida, modificar la respuesta y avanzar nuevamente",
+          "expected": "La nueva respuesta reemplaza la anterior, se envía re-envío de la respuesta al backend (PUT /sesion/{id}/respuestas) y la respuesta modificada se muestra cuando se vuelve a la pregunta."
+        }
+      ],
+      "executionTargets": [
+        {
+          "configurationName": "Android",
+          "runner": "mobile-runner-required",
+          "supportedNow": false,
+          "note": "Definir si es mobile web o aplicación nativa; una app nativa requiere Appium u otro runner móvil."
+        },
+        {
+          "configurationName": "iOS",
+          "runner": "mobile-runner-required",
+          "supportedNow": false,
+          "note": "Definir si es mobile web o aplicación nativa; una app nativa requiere Appium u otro runner móvil."
+        }
+      ],
+      "playwrightEligible": false,
+      "selectorDiscoveryRequired": true,
+      "status": "runner-definition-required"
+    },
+    {
+      "azureTestCaseId": 4708,
+      "requirementId": 2132,
+      "suiteName": "HU-03 – Navegación secuencial",
+      "title": "Indicador de progreso actualizado correctamente al navegar y al modificar respuestas",
+      "priority": 2,
+      "type": "validation",
+      "preconditions": [
+        "Cuestionario iniciado y barra/indicador de progreso visible"
+      ],
+      "steps": [
+        {
+          "action": "Avanzar y retroceder entre preguntas y observar el indicador de progreso",
+          "expected": "El indicador refleja correctamente la posición actual del usuario dentro de la categoría/cuestionario tras cada acción y tras modificar respuestas."
+        }
+      ],
+      "executionTargets": [
+        {
+          "configurationName": "Android",
+          "runner": "mobile-runner-required",
+          "supportedNow": false,
+          "note": "Definir si es mobile web o aplicación nativa; una app nativa requiere Appium u otro runner móvil."
+        },
+        {
+          "configurationName": "iOS",
+          "runner": "mobile-runner-required",
+          "supportedNow": false,
+          "note": "Definir si es mobile web o aplicación nativa; una app nativa requiere Appium u otro runner móvil."
+        }
+      ],
+      "playwrightEligible": false,
+      "selectorDiscoveryRequired": true,
+      "status": "runner-definition-required"
+    },
+    {
+      "azureTestCaseId": 4710,
+      "requirementId": 2133,
+      "suiteName": "HU-04 – Cálculo del perfil financiero",
+      "title": "Cálculo correcto del perfil sumando valores ponderados (caso base)",
+      "priority": 1,
+      "type": "functional",
+      "preconditions": [
+        "Conjunto de respuestas con ponderaciones conocidas preparado (caso de prueba)",
+        "Endpoint POST /api/perfilamiento/calcular disponible"
+      ],
+      "steps": [
+        {
+          "action": "Enviar al endpoint POST /api/perfilamiento/calcular las respuestas de prueba con ponderaciones predefinidas",
+          "expected": "La respuesta del endpoint contiene el perfil esperado (Conservador/Moderado/Agresivo) de acuerdo a la suma ponderada y las reglas de negocio; el resultado se persiste y se devuelve identificador de sesión/resultado."
+        }
+      ],
+      "executionTargets": [
+        {
+          "configurationName": "Windows 10",
+          "runner": "browser-definition-required",
+          "supportedNow": false,
+          "note": "La configuración no identifica un navegador; debe mapearse a un proyecto Playwright concreto."
+        }
+      ],
+      "playwrightEligible": false,
+      "selectorDiscoveryRequired": true,
+      "status": "runner-definition-required"
+    },
+    {
+      "azureTestCaseId": 4711,
+      "requirementId": 2133,
+      "suiteName": "HU-04 – Cálculo del perfil financiero",
+      "title": "Desempate: cuando hay empate entre perfiles, backend indica necesidad de preguntas adicionales",
+      "priority": 2,
+      "type": "edge",
+      "preconditions": [
+        "Conjunto de respuestas que produce empate preparado",
+        "Endpoint POST /api/perfilamiento/calcular y lógica de desempate disponible"
+      ],
+      "steps": [
+        {
+          "action": "Enviar respuestas que generan empate al POST /api/perfilamiento/calcular",
+          "expected": "El servicio responde indicando estado de 'desempate' y provee identificación de preguntas adicionales o siguiente paso para resolver empate según regla implementada."
+        }
+      ],
+      "executionTargets": [
+        {
+          "configurationName": "Windows 10",
+          "runner": "browser-definition-required",
+          "supportedNow": false,
+          "note": "La configuración no identifica un navegador; debe mapearse a un proyecto Playwright concreto."
+        }
+      ],
+      "playwrightEligible": false,
+      "selectorDiscoveryRequired": true,
+      "status": "runner-definition-required"
+    },
+    {
+      "azureTestCaseId": 4714,
+      "requirementId": 2134,
+      "suiteName": "HU-05 – Visualización del perfil",
+      "title": "Resultado se guarda automáticamente y registro en Dynamics",
+      "priority": 1,
+      "type": "integration",
+      "preconditions": [
+        "Usuario completó cuestionario; backend accesible; integración Dynamics configurada en ambiente de prueba"
+      ],
+      "steps": [
+        {
+          "action": "Completar flujo hasta visualizar resultado y consultar registro asociado en Dynamics o endpoint que confirma persistencia",
+          "expected": "El resultado del perfil aparece guardado automáticamente y existe evidencia del registro en Dynamics (registro con fecha y versión del modelo) o respuesta que confirma persistencia."
+        }
+      ],
+      "executionTargets": [
+        {
+          "configurationName": "Android",
+          "runner": "mobile-runner-required",
+          "supportedNow": false,
+          "note": "Definir si es mobile web o aplicación nativa; una app nativa requiere Appium u otro runner móvil."
+        },
+        {
+          "configurationName": "iOS",
+          "runner": "mobile-runner-required",
+          "supportedNow": false,
+          "note": "Definir si es mobile web o aplicación nativa; una app nativa requiere Appium u otro runner móvil."
+        },
+        {
+          "configurationName": "Chrome",
+          "runner": "playwright-web",
+          "supportedNow": true,
+          "note": "Automatizable como navegador web con Playwright."
+        }
+      ],
+      "playwrightEligible": true,
+      "selectorDiscoveryRequired": true,
+      "status": "ready-for-scaffold"
+    }
+  ]
+}

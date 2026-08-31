@@ -1,0 +1,24 @@
+{
+  "executedAt": "2026-08-28T16:44:47.774Z",
+  "planId": 4716,
+  "suiteId": 4718,
+  "configurationName": "Chrome",
+  "pendingTestCaseIds": [
+    4700
+  ],
+  "applied": true,
+  "runId": 4274,
+  "runName": "SG-QA-Automation | 2129 : HU-01 – Acceso al módulo de Perfilamiento Web - Movil | Chrome",
+  "webAccessUrl": "https://dev.azure.com/SGAplicaciones/SG_Synergy/_TestManagement/Runs?runId=4274&_a=runCharts",
+  "results": [
+    {
+      "testCaseId": 4698,
+      "testPointId": 7509,
+      "testResultId": 100000,
+      "outcome": "Passed",
+      "attachmentIds": [
+        2
+      ]
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+[
+  {
+    "azureTestCaseId": 4706,
+    "requirementId": 2132,
+    "suiteName": "HU-03 – Navegación secuencial",
+    "title": "Botones 'Siguiente' y 'Anterior' disponibles y navegación entre preguntas",
+    "priority": 1,
+    "type": "functional",
+    "preconditions": [
+      "Cuestionario iniciado en App móvil (Android/iOS)"
+    ],
+    "steps": [
+      {
+        "action": "En una categoría con varias preguntas, utilizar 'Siguiente' para avanzar y 'Anterior' para retroceder entre preguntas",
+        "expected": "Los botones están disponibles; la navegación ocurre con animación y sin pérdida de contexto."
+      }
+    ],
+    "executionTargets": [
+      {
+        "configurationName": "Android",
+        "runner": "mobile-runner-required",
+        "supportedNow": false,
+        "note": "Definir si es mobile web o aplicación nativa; una app nativa requiere Appium u otro runner móvil."
+      },
+      {
+        "configurationName": "iOS",
+        "runner": "mobile-runner-required",
+        "supportedNow": false,
+        "note": "Definir si es mobile web o aplicación nativa; una app nativa requiere Appium u otro runner móvil."
+      }
+    ],
+    "playwrightEligible": false,
+    "selectorDiscoveryRequired": true,
+    "status": "runner-definition-required"
+  },
+  {
+    "azureTestCaseId": 4707,
+    "requirementId": 2132,
+    "suiteName": "HU-03 – Navegación secuencial",
+    "title": "Conservación y modificación de respuestas previas (integración con persistencia)",
+    "priority": 1,
+    "type": "integration",
+    "preconditions": [
+      "Usuario inicia cuestionario, responde al menos 3 preguntas y avanza",
+      "Sesión de cuestionario con persistencia disponible (API /sesion)"
+    ],
+    "steps": [
+      {
+        "action": "Retroceder a una pregunta ya respondida, modificar la respuesta y avanzar nuevamente",
+        "expected": "La nueva respuesta reemplaza la anterior, se envía re-envío de la respuesta al backend (PUT /sesion/{id}/respuestas) y la respuesta modificada se muestra cuando se vuelve a la pregunta."
+      }
+    ],
+    "executionTargets": [
+      {
+        "configurationName": "Android",
+        "runner": "mobile-runner-required",
+        "supportedNow": false,
+        "note": "Definir si es mobile web o aplicación nativa; una app nativa requiere Appium u otro runner móvil."
+      },
+      {
+        "configurationName": "iOS",
+        "runner": "mobile-runner-required",
+        "supportedNow": false,
+        "note": "Definir si es mobile web o aplicación nativa; una app nativa requiere Appium u otro runner móvil."
+      }
+    ],
+    "playwrightEligible": false,
+    "selectorDiscoveryRequired": true,
+    "status": "runner-definition-required"
+  },
+  {
+    "azureTestCaseId": 4708,
+    "requirementId": 2132,
+    "suiteName": "HU-03 – Navegación secuencial",
+    "title": "Indicador de progreso actualizado correctamente al navegar y al modificar respuestas",
+    "priority": 2,
+    "type": "validation",
+    "preconditions": [
+      "Cuestionario iniciado y barra/indicador de progreso visible"
+    ],
+    "steps": [
+      {
+        "action": "Avanzar y retroceder entre preguntas y observar el indicador de progreso",
+        "expected": "El indicador refleja correctamente la posición actual del usuario dentro de la categoría/cuestionario tras cada acción y tras modificar respuestas."
+      }
+    ],
+    "executionTargets": [
+      {
+        "configurationName": "Android",
+        "runner": "mobile-runner-required",
+        "supportedNow": false,
+        "note": "Definir si es mobile web o aplicación nativa; una app nativa requiere Appium u otro runner móvil."
+      },
+      {
+        "configurationName": "iOS",
+        "runner": "mobile-runner-required",
+        "supportedNow": false,
+        "note": "Definir si es mobile web o aplicación nativa; una app nativa requiere Appium u otro runner móvil."
+      }
+    ],
+    "playwrightEligible": false,
+    "selectorDiscoveryRequired": true,
+    "status": "runner-definition-required"
+  },
+  {
+    "azureTestCaseId": 4710,
+    "requirementId": 2133,
+    "suiteName": "HU-04 – Cálculo del perfil financiero",
+    "title": "Cálculo correcto del perfil sumando valores ponderados (caso base)",
+    "priority": 1,
+    "type": "functional",
+    "preconditions": [
+      "Conjunto de respuestas con ponderaciones conocidas preparado (caso de prueba)",
+      "Endpoint POST /api/perfilamiento/calcular disponible"
+    ],
+    "steps": [
+      {
+        "action": "Enviar al endpoint POST /api/perfilamiento/calcular las respuestas de prueba con ponderaciones predefinidas",
+        "expected": "La respuesta del endpoint contiene el perfil esperado (Conservador/Moderado/Agresivo) de acuerdo a la suma ponderada y las reglas de negocio; el resultado se persiste y se devuelve identificador de sesión/resultado."
+      }
+    ],
+    "executionTargets": [
+      {
+        "configurationName": "Windows 10",
+        "runner": "browser-definition-required",
+        "supportedNow": false,
+        "note": "La configuración no identifica un navegador; debe mapearse a un proyecto Playwright concreto."
+      }
+    ],
+    "playwrightEligible": false,
+    "selectorDiscoveryRequired": true,
+    "status": "runner-definition-required"
+  },
+  {
+    "azureTestCaseId": 4711,
+    "requirementId": 2133,
+    "suiteName": "HU-04 – Cálculo del perfil financiero",
+    "title": "Desempate: cuando hay empate entre perfiles, backend indica necesidad de preguntas adicionales",
+    "priority": 2,
+    "type": "edge",
+    "preconditions": [
+      "Conjunto de respuestas que produce empate preparado",
+      "Endpoint POST /api/perfilamiento/calcular y lógica de desempate disponible"
+    ],
+    "steps": [
+      {
+        "action": "Enviar respuestas que generan empate al POST /api/perfilamiento/calcular",
+        "expected": "El servicio responde indicando estado de 'desempate' y provee identificación de preguntas adicionales o siguiente paso para resolver empate según regla implementada."
+      }
+    ],
+    "executionTargets": [
+      {
+        "configurationName": "Windows 10",
+        "runner": "browser-definition-required",
+        "supportedNow": false,
+        "note": "La configuración no identifica un navegador; debe mapearse a un proyecto Playwright concreto."
+      }
+    ],
+    "playwrightEligible": false,
+    "selectorDiscoveryRequired": true,
+    "status": "runner-definition-required"
+  }
+]

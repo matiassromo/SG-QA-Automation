@@ -1,0 +1,14 @@
+{
+  "organization": "SGAplicaciones",
+  "project": "SG_Synergy",
+  "areaPath": "SG_Synergy\\QA",
+  "iterationPath": "SG_Synergy\\Sprint 3",
+  "testPlanName": "QA-AUTOMATION-PILOT-1965",
+  "defaultTesterIds": [],
+  "testCaseNaming": {
+    "prefix": "QA",
+    "numberSeparator": " - TC-",
+    "padding": 3,
+    "titleSeparator": " "
+  }
+}

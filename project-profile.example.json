@@ -1,0 +1,34 @@
+{
+  "profileName": "proyecto-qa",
+  "azure": {
+    "organization": "mi-organizacion",
+    "project": "mi-proyecto",
+    "areaPath": "mi-proyecto\\QA",
+    "defaultTesterIds": [],
+    "existingTestCasePolicy": "block",
+    "testCaseNaming": {
+      "prefix": "QA",
+      "numberSeparator": " - TC-",
+      "padding": 3,
+      "titleSeparator": " "
+    }
+  },
+  "applications": {
+    "web": {
+      "baseUrlEnv": "MY_PROJECT_WEB_BASE_URL",
+      "usernameEnv": "MY_PROJECT_WEB_USER",
+      "passwordEnv": "MY_PROJECT_WEB_PASSWORD"
+    },
+    "mobileWeb": {
+      "baseUrlEnv": "MY_PROJECT_MOBILE_BASE_URL",
+      "usernameEnv": "MY_PROJECT_MOBILE_USER",
+      "passwordEnv": "MY_PROJECT_MOBILE_PASSWORD"
+    }
+  },
+  "sourcePolicy": {
+    "featureIdIsRuntimeInput": true,
+    "discoverChildRequirements": true,
+    "rfcLocation": "epic-attachment",
+    "rfcExtension": ".docx"
+  }
+}

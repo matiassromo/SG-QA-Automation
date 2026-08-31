@@ -1,0 +1,15 @@
+{
+  "organization": "mi-organizacion",
+  "project": "mi-proyecto",
+  "areaPath": "mi-proyecto\\QA",
+  "iterationPath": "mi-proyecto\\Sprint 3",
+  "testPlanName": "TP-1965 Perfilamiento Fase 1 - Plan de Pruebas",
+  "defaultTesterIds": [],
+  "existingTestCasePolicy": "block",
+  "testCaseNaming": {
+    "prefix": "QA",
+    "numberSeparator": " - TC-",
+    "padding": 3,
+    "titleSeparator": " "
+  }
+}

@@ -1,0 +1,505 @@
+{
+  "executedAt": "2026-08-31T14:52:27.811Z",
+  "apply": true,
+  "planId": 4716,
+  "totals": {
+    "points": 47,
+    "executed": 1,
+    "passed": 1,
+    "failed": 0,
+    "blocked": 46
+  },
+  "publications": [
+    {
+      "suiteId": 4718,
+      "configurationName": "Windows 10",
+      "applied": true,
+      "runId": 4314,
+      "runName": "SG-QA-Automation | 2129 : HU-01 – Acceso al módulo de Perfilamiento Web - Movil | Windows 10",
+      "webAccessUrl": "https://dev.azure.com/SGAplicaciones/SG_Synergy/_TestManagement/Runs?runId=4314&_a=runCharts",
+      "results": [
+        {
+          "testCaseId": 3808,
+          "testPointId": 7502,
+          "testResultId": 100000,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 3810,
+          "testPointId": 7503,
+          "testResultId": 100001,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 3811,
+          "testPointId": 7504,
+          "testResultId": 100002,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 3950,
+          "testPointId": 7505,
+          "testResultId": 100003,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        }
+      ]
+    },
+    {
+      "suiteId": 4718,
+      "configurationName": "Chrome",
+      "applied": true,
+      "runId": 4316,
+      "runName": "SG-QA-Automation | 2129 : HU-01 – Acceso al módulo de Perfilamiento Web - Movil | Chrome",
+      "webAccessUrl": "https://dev.azure.com/SGAplicaciones/SG_Synergy/_TestManagement/Runs?runId=4316&_a=runCharts",
+      "results": [
+        {
+          "testCaseId": 4698,
+          "testPointId": 7509,
+          "testResultId": 100000,
+          "outcome": "Passed",
+          "attachmentIds": [
+            2
+          ]
+        },
+        {
+          "testCaseId": 4699,
+          "testPointId": 7512,
+          "testResultId": 100001,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 4700,
+          "testPointId": 7515,
+          "testResultId": 100002,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        }
+      ]
+    },
+    {
+      "suiteId": 4718,
+      "configurationName": "iOS",
+      "applied": true,
+      "runId": 4318,
+      "runName": "SG-QA-Automation | 2129 : HU-01 – Acceso al módulo de Perfilamiento Web - Movil | iOS",
+      "webAccessUrl": "https://dev.azure.com/SGAplicaciones/SG_Synergy/_TestManagement/Runs?runId=4318&_a=runCharts",
+      "results": [
+        {
+          "testCaseId": 4698,
+          "testPointId": 7510,
+          "testResultId": 100000,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 4699,
+          "testPointId": 7513,
+          "testResultId": 100001,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 4700,
+          "testPointId": 7516,
+          "testResultId": 100002,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        }
+      ]
+    },
+    {
+      "suiteId": 4718,
+      "configurationName": "Android",
+      "applied": true,
+      "runId": 4320,
+      "runName": "SG-QA-Automation | 2129 : HU-01 – Acceso al módulo de Perfilamiento Web - Movil | Android",
+      "webAccessUrl": "https://dev.azure.com/SGAplicaciones/SG_Synergy/_TestManagement/Runs?runId=4320&_a=runCharts",
+      "results": [
+        {
+          "testCaseId": 4698,
+          "testPointId": 7511,
+          "testResultId": 100000,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 4699,
+          "testPointId": 7514,
+          "testResultId": 100001,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 4700,
+          "testPointId": 7517,
+          "testResultId": 100002,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        }
+      ]
+    },
+    {
+      "suiteId": 4719,
+      "configurationName": "Windows 10",
+      "applied": true,
+      "runId": 4322,
+      "runName": "SG-QA-Automation | 2131 : HU-02 – Cuestionario por categorías | Windows 10",
+      "webAccessUrl": "https://dev.azure.com/SGAplicaciones/SG_Synergy/_TestManagement/Runs?runId=4322&_a=runCharts",
+      "results": [
+        {
+          "testCaseId": 3810,
+          "testPointId": 7518,
+          "testResultId": 100000,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 3811,
+          "testPointId": 7519,
+          "testResultId": 100001,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        }
+      ]
+    },
+    {
+      "suiteId": 4719,
+      "configurationName": "Chrome",
+      "applied": true,
+      "runId": 4324,
+      "runName": "SG-QA-Automation | 2131 : HU-02 – Cuestionario por categorías | Chrome",
+      "webAccessUrl": "https://dev.azure.com/SGAplicaciones/SG_Synergy/_TestManagement/Runs?runId=4324&_a=runCharts",
+      "results": [
+        {
+          "testCaseId": 4702,
+          "testPointId": 7523,
+          "testResultId": 100000,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 4703,
+          "testPointId": 7526,
+          "testResultId": 100001,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 4704,
+          "testPointId": 7529,
+          "testResultId": 100002,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        }
+      ]
+    },
+    {
+      "suiteId": 4719,
+      "configurationName": "iOS",
+      "applied": true,
+      "runId": 4326,
+      "runName": "SG-QA-Automation | 2131 : HU-02 – Cuestionario por categorías | iOS",
+      "webAccessUrl": "https://dev.azure.com/SGAplicaciones/SG_Synergy/_TestManagement/Runs?runId=4326&_a=runCharts",
+      "results": [
+        {
+          "testCaseId": 4702,
+          "testPointId": 7524,
+          "testResultId": 100000,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 4703,
+          "testPointId": 7527,
+          "testResultId": 100001,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 4704,
+          "testPointId": 7530,
+          "testResultId": 100002,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        }
+      ]
+    },
+    {
+      "suiteId": 4719,
+      "configurationName": "Android",
+      "applied": true,
+      "runId": 4328,
+      "runName": "SG-QA-Automation | 2131 : HU-02 – Cuestionario por categorías | Android",
+      "webAccessUrl": "https://dev.azure.com/SGAplicaciones/SG_Synergy/_TestManagement/Runs?runId=4328&_a=runCharts",
+      "results": [
+        {
+          "testCaseId": 4702,
+          "testPointId": 7525,
+          "testResultId": 100000,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 4703,
+          "testPointId": 7528,
+          "testResultId": 100001,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 4704,
+          "testPointId": 7531,
+          "testResultId": 100002,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        }
+      ]
+    },
+    {
+      "suiteId": 4720,
+      "configurationName": "Windows 10",
+      "applied": true,
+      "runId": 4330,
+      "runName": "SG-QA-Automation | 2132 : HU-03 – Navegación secuencial | Windows 10",
+      "webAccessUrl": "https://dev.azure.com/SGAplicaciones/SG_Synergy/_TestManagement/Runs?runId=4330&_a=runCharts",
+      "results": [
+        {
+          "testCaseId": 3810,
+          "testPointId": 7532,
+          "testResultId": 100000,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 3811,
+          "testPointId": 7533,
+          "testResultId": 100001,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        }
+      ]
+    },
+    {
+      "suiteId": 4720,
+      "configurationName": "iOS",
+      "applied": true,
+      "runId": 4332,
+      "runName": "SG-QA-Automation | 2132 : HU-03 – Navegación secuencial | iOS",
+      "webAccessUrl": "https://dev.azure.com/SGAplicaciones/SG_Synergy/_TestManagement/Runs?runId=4332&_a=runCharts",
+      "results": [
+        {
+          "testCaseId": 4706,
+          "testPointId": 7537,
+          "testResultId": 100000,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 4707,
+          "testPointId": 7539,
+          "testResultId": 100001,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 4708,
+          "testPointId": 7541,
+          "testResultId": 100002,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        }
+      ]
+    },
+    {
+      "suiteId": 4720,
+      "configurationName": "Android",
+      "applied": true,
+      "runId": 4334,
+      "runName": "SG-QA-Automation | 2132 : HU-03 – Navegación secuencial | Android",
+      "webAccessUrl": "https://dev.azure.com/SGAplicaciones/SG_Synergy/_TestManagement/Runs?runId=4334&_a=runCharts",
+      "results": [
+        {
+          "testCaseId": 4706,
+          "testPointId": 7538,
+          "testResultId": 100000,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 4707,
+          "testPointId": 7540,
+          "testResultId": 100001,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 4708,
+          "testPointId": 7542,
+          "testResultId": 100002,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        }
+      ]
+    },
+    {
+      "suiteId": 4721,
+      "configurationName": "Windows 10",
+      "applied": true,
+      "runId": 4336,
+      "runName": "SG-QA-Automation | 2133 : HU-04 – Cálculo del perfil financiero | Windows 10",
+      "webAccessUrl": "https://dev.azure.com/SGAplicaciones/SG_Synergy/_TestManagement/Runs?runId=4336&_a=runCharts",
+      "results": [
+        {
+          "testCaseId": 3813,
+          "testPointId": 7543,
+          "testResultId": 100000,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 3816,
+          "testPointId": 7544,
+          "testResultId": 100001,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 3817,
+          "testPointId": 7545,
+          "testResultId": 100002,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 3818,
+          "testPointId": 7546,
+          "testResultId": 100003,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 4710,
+          "testPointId": 7547,
+          "testResultId": 100004,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 4711,
+          "testPointId": 7548,
+          "testResultId": 100005,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        }
+      ]
+    },
+    {
+      "suiteId": 4722,
+      "configurationName": "Windows 10",
+      "applied": true,
+      "runId": 4338,
+      "runName": "SG-QA-Automation | 2134 : HU-05 – Visualización del perfil | Windows 10",
+      "webAccessUrl": "https://dev.azure.com/SGAplicaciones/SG_Synergy/_TestManagement/Runs?runId=4338&_a=runCharts",
+      "results": [
+        {
+          "testCaseId": 3814,
+          "testPointId": 7549,
+          "testResultId": 100000,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 3819,
+          "testPointId": 7550,
+          "testResultId": 100001,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 3820,
+          "testPointId": 7551,
+          "testResultId": 100002,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        }
+      ]
+    },
+    {
+      "suiteId": 4722,
+      "configurationName": "Chrome",
+      "applied": true,
+      "runId": 4340,
+      "runName": "SG-QA-Automation | 2134 : HU-05 – Visualización del perfil | Chrome",
+      "webAccessUrl": "https://dev.azure.com/SGAplicaciones/SG_Synergy/_TestManagement/Runs?runId=4340&_a=runCharts",
+      "results": [
+        {
+          "testCaseId": 4713,
+          "testPointId": 7554,
+          "testResultId": 100000,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 4714,
+          "testPointId": 7557,
+          "testResultId": 100001,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        }
+      ]
+    },
+    {
+      "suiteId": 4722,
+      "configurationName": "iOS",
+      "applied": true,
+      "runId": 4342,
+      "runName": "SG-QA-Automation | 2134 : HU-05 – Visualización del perfil | iOS",
+      "webAccessUrl": "https://dev.azure.com/SGAplicaciones/SG_Synergy/_TestManagement/Runs?runId=4342&_a=runCharts",
+      "results": [
+        {
+          "testCaseId": 4713,
+          "testPointId": 7555,
+          "testResultId": 100000,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 4714,
+          "testPointId": 7558,
+          "testResultId": 100001,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        }
+      ]
+    },
+    {
+      "suiteId": 4722,
+      "configurationName": "Android",
+      "applied": true,
+      "runId": 4344,
+      "runName": "SG-QA-Automation | 2134 : HU-05 – Visualización del perfil | Android",
+      "webAccessUrl": "https://dev.azure.com/SGAplicaciones/SG_Synergy/_TestManagement/Runs?runId=4344&_a=runCharts",
+      "results": [
+        {
+          "testCaseId": 4713,
+          "testPointId": 7556,
+          "testResultId": 100000,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        },
+        {
+          "testCaseId": 4714,
+          "testPointId": 7559,
+          "testResultId": 100001,
+          "outcome": "Blocked",
+          "attachmentIds": []
+        }
+      ]
+    }
+  ]
+}
