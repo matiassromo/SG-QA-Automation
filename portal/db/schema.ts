@@ -79,3 +79,21 @@ export const automationAnalyses = sqliteTable('automation_analyses', {
 }, table => ({
   context: uniqueIndex('automation_analyses_context').on(table.project, table.planId, table.suiteId, table.testCaseId),
 }));
+
+export const automationProjectSettings = sqliteTable('automation_project_settings', {
+  id: integer('id').primaryKey({ autoIncrement: true }),
+  project: text('project').notNull().unique(),
+  applicationType: text('application_type').notNull().default('web'),
+  baseUrl: text('base_url').notNull().default(''),
+  usernameEnv: text('username_env').notNull().default(''),
+  passwordEnv: text('password_env').notNull().default(''),
+  authMode: text('auth_mode').notNull().default('form'),
+  loginPath: text('login_path').notNull().default('/'),
+  usernameLocator: text('username_locator').notNull().default(''),
+  passwordLocator: text('password_locator').notNull().default(''),
+  submitLocator: text('submit_locator').notNull().default(''),
+  authenticatedLocator: text('authenticated_locator').notNull().default(''),
+  navigationLocator: text('navigation_locator').notNull().default(''),
+  configurationMappings: text('configuration_mappings').notNull().default('{}'),
+  updatedAt: text('updated_at').notNull(),
+});

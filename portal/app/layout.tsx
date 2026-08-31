@@ -9,6 +9,7 @@ import './rfc.css';
 import './azure-attachments.css';
 import './test-design.css';
 import './automation.css';
+import './automation-setup.css';
 import './test-plans.css';
 import './design-preparation.css';
 

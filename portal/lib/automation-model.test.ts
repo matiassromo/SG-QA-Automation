@@ -11,6 +11,7 @@ test('no inventa capacidad móvil cuando Azure no distingue web de app nativa',(
   assert.equal(capabilityForConfiguration({id:3,name:'Android'}).state,'NOT_CONFIGURED');
   assert.equal(capabilityForConfiguration({id:4,name:'iOS'}).state,'NOT_CONFIGURED');
 });
+test('respeta un mapeo confirmado por el proyecto',()=>{assert.equal(capabilityForConfiguration({id:7,name:'Windows 10'},'chromium').state,'SUPPORTED');assert.equal(capabilityForConfiguration({id:8,name:'Android'},'native-unsupported').state,'NOT_SUPPORTED');});
 test('el análisis declara contexto faltante y no inventa selectores ni credenciales',()=>{
   const result=analyzeAutomatability({testCaseId:20,title:'Iniciar sesión',steps:[{action:'Ingresar al portal',expected:'Muestra el inicio'}],configurations:[{id:1,name:'Chrome'}]});
   assert.deepEqual(result.missingContext,['baseUrl','testUser','authContext','navigationContext']);

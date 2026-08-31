@@ -100,5 +100,24 @@ export async function ensureSchema() {
     )
   `).run();
   await env.DB.prepare('CREATE INDEX IF NOT EXISTS idx_automation_analyses_suite ON automation_analyses(project, plan_id, suite_id)').run();
+  await env.DB.prepare(`
+    CREATE TABLE IF NOT EXISTS automation_project_settings (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      project TEXT NOT NULL UNIQUE,
+      application_type TEXT NOT NULL DEFAULT 'web',
+      base_url TEXT NOT NULL DEFAULT '',
+      username_env TEXT NOT NULL DEFAULT '',
+      password_env TEXT NOT NULL DEFAULT '',
+      auth_mode TEXT NOT NULL DEFAULT 'form',
+      login_path TEXT NOT NULL DEFAULT '/',
+      username_locator TEXT NOT NULL DEFAULT '',
+      password_locator TEXT NOT NULL DEFAULT '',
+      submit_locator TEXT NOT NULL DEFAULT '',
+      authenticated_locator TEXT NOT NULL DEFAULT '',
+      navigation_locator TEXT NOT NULL DEFAULT '',
+      configuration_mappings TEXT NOT NULL DEFAULT '{}',
+      updated_at TEXT NOT NULL
+    )
+  `).run();
   await env.DB.prepare('PRAGMA optimize').run();
 }

@@ -1,0 +1,9 @@
+import { eq } from 'drizzle-orm';
+import { NextResponse } from 'next/server';
+import { ensureSchema,getDb } from '@/db';
+import { automationProjectSettings } from '@/db/schema';
+import { emptyAutomationSettings,type AutomationSettings,validateAutomationSettings } from '@/lib/automation-settings';
+
+const decode=(row:typeof automationProjectSettings.$inferSelect):AutomationSettings=>({...row,applicationType:row.applicationType as AutomationSettings['applicationType'],authMode:row.authMode as AutomationSettings['authMode'],configurationMappings:JSON.parse(row.configurationMappings)});
+export async function GET(request:Request){const project=new URL(request.url).searchParams.get('project')?.trim();if(!project)return NextResponse.json({error:'Falta el proyecto.'},{status:400});await ensureSchema();const[row]=await getDb().select().from(automationProjectSettings).where(eq(automationProjectSettings.project,project));return NextResponse.json({settings:row?decode(row):emptyAutomationSettings(project)});}
+export async function PUT(request:Request){const body=await request.json() as AutomationSettings;const project=String(body.project??'').trim();if(!project)return NextResponse.json({error:'Falta el proyecto.'},{status:400});const settings:AutomationSettings={...emptyAutomationSettings(project),...body,project,configurationMappings:body.configurationMappings??{},updatedAt:new Date().toISOString()};const errors=validateAutomationSettings(settings);if(errors.length)return NextResponse.json({error:errors.join(' ')},{status:400});await ensureSchema();const values={...settings,configurationMappings:JSON.stringify(settings.configurationMappings)};const[row]=await getDb().insert(automationProjectSettings).values(values).onConflictDoUpdate({target:automationProjectSettings.project,set:values}).returning();return NextResponse.json({settings:decode(row)});}
