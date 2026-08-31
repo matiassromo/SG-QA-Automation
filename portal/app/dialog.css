@@ -1,0 +1,9 @@
+.dialog-backdrop{position:fixed;inset:0;z-index:20;display:grid;place-items:center;padding:20px;background:#07182ba8;backdrop-filter:blur(5px)}
+.dialog{width:min(520px,100%);background:#fff;border-radius:18px;box-shadow:0 28px 80px #06112066;overflow:hidden}
+.dialog-head{display:flex;justify-content:space-between;align-items:flex-start;padding:24px 26px 18px;border-bottom:1px solid var(--line)}
+.dialog-head h2{margin:5px 0 0;font-size:21px}.dialog-head button{border:0;background:#edf2f7;color:#65768a;width:32px;height:32px;border-radius:9px;font-size:22px;cursor:pointer}
+.dialog form{padding:22px 26px 26px;display:grid;grid-template-columns:1fr 1fr;gap:15px}.dialog label{display:grid;gap:7px;font-size:11px;font-weight:750;color:#65768a}
+.dialog label select{width:100%;border:1px solid #dbe3ec;border-radius:9px;padding:10px;background:#fff;color:#24364c}.execution-summary{grid-column:1/-1;display:flex;gap:8px;padding:13px;border-radius:10px;background:#f3f7fb;font-size:11px}
+.execution-summary>*{border-radius:99px;padding:5px 8px;background:#fff}.execution-summary b{color:#168554}.notice{grid-column:1/-1;margin:0;border-radius:9px;padding:11px;background:#eaf3ff;color:#185fae;font-size:12px}
+.dialog-actions{grid-column:1/-1;display:flex;justify-content:flex-end;gap:10px;margin-top:5px}.dialog-actions button{border:0;border-radius:9px;padding:11px 16px;background:#1768c6;color:#fff;font-weight:750;cursor:pointer}
+.dialog-actions .secondary{background:#edf1f6;color:#526579}.dialog-actions button:disabled{opacity:.6;cursor:wait}@media(max-width:520px){.dialog form{grid-template-columns:1fr}}
