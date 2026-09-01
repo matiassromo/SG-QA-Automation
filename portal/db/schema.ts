@@ -97,3 +97,15 @@ export const automationProjectSettings = sqliteTable('automation_project_setting
   configurationMappings: text('configuration_mappings').notNull().default('{}'),
   updatedAt: text('updated_at').notNull(),
 });
+
+export const automationRecipes = sqliteTable('automation_recipes', {
+  id: integer('id').primaryKey({ autoIncrement: true }), project: text('project').notNull(), planId: integer('plan_id').notNull(),
+  suiteId: integer('suite_id').notNull(), testCaseId: integer('test_case_id').notNull(), operations: text('operations').notNull().default('[]'),
+  status: text('status').notNull().default('DRAFT'), updatedAt: text('updated_at').notNull(),
+}, table=>({context:uniqueIndex('automation_recipes_context').on(table.project,table.planId,table.suiteId,table.testCaseId)}));
+
+export const automationArtifacts = sqliteTable('automation_artifacts', {
+  id: integer('id').primaryKey({ autoIncrement: true }), project: text('project').notNull(), planId: integer('plan_id').notNull(),
+  suiteId: integer('suite_id').notNull(), testCaseId: integer('test_case_id').notNull(), fileName: text('file_name').notNull(),
+  source: text('source').notNull(), createdAt: text('created_at').notNull(),
+});

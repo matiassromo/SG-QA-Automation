@@ -119,5 +119,16 @@ export async function ensureSchema() {
       updated_at TEXT NOT NULL
     )
   `).run();
+  await env.DB.prepare(`CREATE TABLE IF NOT EXISTS automation_recipes (
+    id INTEGER PRIMARY KEY AUTOINCREMENT, project TEXT NOT NULL, plan_id INTEGER NOT NULL, suite_id INTEGER NOT NULL,
+    test_case_id INTEGER NOT NULL, operations TEXT NOT NULL DEFAULT '[]', status TEXT NOT NULL DEFAULT 'DRAFT', updated_at TEXT NOT NULL,
+    UNIQUE(project, plan_id, suite_id, test_case_id)
+  )`).run();
+  await env.DB.prepare('CREATE INDEX IF NOT EXISTS idx_automation_recipes_scope ON automation_recipes(project, plan_id, suite_id)').run();
+  await env.DB.prepare(`CREATE TABLE IF NOT EXISTS automation_artifacts (
+    id INTEGER PRIMARY KEY AUTOINCREMENT, project TEXT NOT NULL, plan_id INTEGER NOT NULL, suite_id INTEGER NOT NULL,
+    test_case_id INTEGER NOT NULL, file_name TEXT NOT NULL, source TEXT NOT NULL, created_at TEXT NOT NULL
+  )`).run();
+  await env.DB.prepare('CREATE INDEX IF NOT EXISTS idx_automation_artifacts_scope ON automation_artifacts(project, plan_id, suite_id, test_case_id)').run();
   await env.DB.prepare('PRAGMA optimize').run();
 }

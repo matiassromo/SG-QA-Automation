@@ -15,6 +15,13 @@
       "when": 1787948221268,
       "tag": "0001_closed_quasimodo",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1788249600000,
+      "tag": "0003_automation_workspace",
+      "breakpoints": true
     }
   ]
 }
