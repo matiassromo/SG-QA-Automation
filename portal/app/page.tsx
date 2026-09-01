@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { TestDesignPanel } from "./test-design-panel";
 import { AutomationPanel } from "./automation-panel";
+import { ExecutionsPanel } from "./executions-panel";
 import { TestPlansPanel } from "./test-plans-panel";
 import { DesignPreparationModal } from "./design-preparation-modal";
 
@@ -389,6 +390,9 @@ export default function Home() {
             {!loading && !error && view === "automation" && (
               <AutomationPanel project={project} plans={plans} suites={suites} selectedPlanId={planId} selectedSuiteId={suiteId} />
             )}{" "}
+            {!loading && !error && view === "runs" && (
+              <ExecutionsPanel project={project} />
+            )}{" "}
             {!loading &&
               !error &&
               ![
@@ -396,6 +400,7 @@ export default function Home() {
                 "design",
                 "testplans",
                 "automation",
+                "runs",
               ].includes(view) && (
                 <ModulePlaceholder
                   view={view}

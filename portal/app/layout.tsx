@@ -11,6 +11,7 @@ import './test-design.css';
 import './automation.css';
 import './automation-setup.css';
 import './automation-recipe.css';
+import './executions.css';
 import './test-plans.css';
 import './design-preparation.css';
 
